@@ -1,0 +1,6 @@
+timestamp=$(date +%s)
+event="$timestamp|$1|$2"
+
+echo -e $event >> $RANDOM.txt
+echo $event
+date +%T
